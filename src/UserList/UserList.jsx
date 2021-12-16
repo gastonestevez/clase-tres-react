@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Searcher from '../Searcher'
-import { Link } from "react-router-dom"
+import { Link, withRouter } from "react-router-dom"
 
-export default class UserList extends Component {
+class UserList extends Component {
 
     constructor(props){
         super(props)
@@ -64,3 +64,5 @@ export default class UserList extends Component {
         )
     }
 }
+
+export default withRouter(UserList)
